@@ -40,6 +40,10 @@
     .about-title {
         text-align: center;
     }
+
+    .about-cta {
+        justify-content: center;
+    }
 }
 
 .about-text p {

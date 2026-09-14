@@ -87,7 +87,7 @@ const AboutMe = () => {
                         <p>
                             Hi! My name is Arshita Sharma. I've worked with adolescents and adults facing a wide range of emotional and psychological concerns, including individuals navigating high distress, self-harm, addiction recovery, and complex trauma. These experiences have shaped a therapeutic style that is compassionate, collaborative, and grounded in real-life challenges rather than one-size-fits-all solutions.
                         </p>
-                        <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem', flexWrap: 'wrap' }}>
+                        <div className="about-cta" style={{ display: 'flex', gap: '1rem', marginTop: '2rem', flexWrap: 'wrap' }}>
                             <a
                                 href="https://www.instagram.com/thestillspacebyarshita/"
                                 target="_blank"
