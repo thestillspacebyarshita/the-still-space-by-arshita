@@ -9,7 +9,7 @@ const processSteps = [
     {
         title: 'Reach Out',
         description:
-            'Drop us a message on Instagram, WhatsApp, or email to get connected with a suitable therapist on our team.',
+            'Drop us a message on Instagram, WhatsApp, or email to get connected',
     },
     {
         title: 'Fill the Short 2-Min Intake Form',
@@ -87,7 +87,7 @@ const ServiceDetail = () => {
                         <div className="service-info-card">
                             <Clock size={22} aria-hidden="true" />
                             <span className="service-info-label">Session time</span>
-                            <span className="service-info-value">60 minutes</span>
+                            <span className="service-info-value">50-60 minutes</span>
                         </div>
                     </motion.div>
 
