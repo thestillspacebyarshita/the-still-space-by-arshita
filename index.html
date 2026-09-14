@@ -15,6 +15,7 @@
       var redirect = sessionStorage.getItem('redirect')
       if (redirect) {
         sessionStorage.removeItem('redirect')
+        sessionStorage.removeItem('redirect-attempt')
         if (redirect !== window.location.pathname + window.location.search + window.location.hash) {
           window.history.replaceState(null, '', redirect)
         }

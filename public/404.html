@@ -5,8 +5,20 @@
   <meta charset="UTF-8" />
   <title>The Still Space | By Arshita</title>
   <script>
-    sessionStorage.redirect = window.location.pathname + window.location.search + window.location.hash
-    window.location.replace('./')
+    ;(function () {
+      if (sessionStorage.getItem('redirect-attempt')) {
+        sessionStorage.removeItem('redirect-attempt')
+        return
+      }
+
+      sessionStorage.setItem('redirect-attempt', '1')
+      sessionStorage.setItem('redirect',
+        window.location.pathname + window.location.search + window.location.hash)
+
+      var segments = window.location.pathname.split('/').filter(Boolean)
+      var root = segments.length > 0 ? '/' + segments[0] + '/' : './'
+      window.location.replace(root)
+    })()
   </script>
 </head>
 
