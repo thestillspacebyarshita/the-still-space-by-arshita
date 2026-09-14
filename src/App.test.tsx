@@ -4,7 +4,7 @@ import App from './App';
 
 describe('App / Home page', () => {
   beforeEach(() => {
-    window.history.pushState({}, '', '/');
+    window.history.pushState({}, '', '/the-still-space-by-arshita/');
   });
 
   it('renders the hero headline', () => {

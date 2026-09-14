@@ -4,7 +4,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/the-still-space-by-arshita/',
   plugins: [react()],
   resolve: {
     alias: {

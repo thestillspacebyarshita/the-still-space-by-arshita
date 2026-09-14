@@ -35,20 +35,6 @@ const testimonials = [
   },
 ];
 
-const ROUTER_BASENAME = (() => {
-  const src = Array.from(document.querySelectorAll('script[src]'))
-    .map((s) => s.getAttribute('src') ?? '')
-    .find((s) => s.includes('/assets/'));
-  if (!src) return '';
-  try {
-    const url = new URL(src, window.location.href);
-    const idx = url.pathname.lastIndexOf('/assets/');
-    return idx > 0 ? url.pathname.slice(0, idx) : '';
-  } catch {
-    return '';
-  }
-})();
-
 const Home = () => (
   <>
     <Hero />
@@ -68,7 +54,7 @@ function App() {
         <title>The Still Space | By Arshita</title>
         <meta name="description" content="Find peace and balance with expert clinical psychology services. Depression, anxiety, and trauma recovery." />
       </Helmet>
-      <Router basename={ROUTER_BASENAME}>
+      <Router basename="/the-still-space-by-arshita">
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
