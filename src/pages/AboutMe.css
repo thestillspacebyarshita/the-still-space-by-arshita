@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 969px) {
     .about-me-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -33,6 +33,13 @@
     color: var(--text-primary);
     margin-bottom: 1.5rem;
     font-weight: 500;
+}
+
+/* Tablet & mobile: stack the sections and center the headings */
+@media (max-width: 968px) {
+    .about-title {
+        text-align: center;
+    }
 }
 
 .about-text p {
