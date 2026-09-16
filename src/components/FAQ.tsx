@@ -67,7 +67,7 @@ const FAQ = ({ items = faqs }: FAQProps) => {
                                             exit={{ height: 0, opacity: 0 }}
                                             transition={{ duration: 0.3, ease: 'easeInOut' }}
                                         >
-                                            <p>{item.answer}</p>
+                                            {item.answer}
                                         </motion.div>
                                     )}
                                 </AnimatePresence>

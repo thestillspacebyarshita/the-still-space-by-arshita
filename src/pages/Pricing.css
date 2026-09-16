@@ -1,0 +1,230 @@
+.pricing-page {
+    min-height: 70vh;
+}
+
+/* Header */
+.pricing-header {
+    padding: 6.5rem 0 3rem;
+    background-color: var(--bg-alt);
+}
+
+.pricing-header-inner {
+    max-width: 720px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pricing-eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+}
+
+.pricing-title {
+    font-size: clamp(2.6rem, 5vw, 3.8rem);
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.pricing-subtitle {
+    color: var(--text-secondary);
+    font-size: 1.075rem;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+/* Body */
+.pricing-body {
+    padding: 4rem 0 6rem;
+}
+
+.pricing-block {
+    max-width: 900px;
+    margin: 0 auto 4.5rem;
+}
+
+/* Category header */
+.pricing-block-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.pricing-block-note {
+    font-size: 0.8rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent-hover);
+    margin-bottom: 0.4rem;
+}
+
+.pricing-block-title {
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    color: var(--text-primary);
+}
+
+.pricing-fee-chip {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: var(--accent-soft);
+    border: 1px solid var(--accent);
+    border-radius: 18px;
+    padding: 1rem 1.5rem;
+    box-shadow: var(--shadow-soft);
+}
+
+.pricing-fee-label {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.pricing-fee-value {
+    font-family: var(--font-heading);
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: var(--accent-strong);
+    line-height: 1.1;
+}
+
+.pricing-fee-time {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+}
+
+/* Plan cards grid */
+.pricing-plans {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+}
+
+.pricing-plan-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 1.5rem 1.4rem 1.4rem;
+    box-shadow: var(--shadow-soft);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.pricing-plan-card:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-maroon);
+    transform: translateY(-4px);
+}
+
+.pricing-plan-tag {
+    position: absolute;
+    top: -12px;
+    right: 14px;
+    background-color: var(--accent);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+}
+
+.pricing-plan-name {
+    font-size: 1.32rem;
+    color: var(--text-primary);
+    padding-right: 1rem;
+}
+
+.pricing-plan-amount {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin-top: auto;
+}
+
+.pricing-plan-sessions {
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+.pricing-amount-total,
+.pricing-amount-main {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--accent-strong);
+    line-height: 1.1;
+}
+
+.pricing-amount-detail {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.pricing-plan-installment {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.86rem;
+    color: var(--accent);
+    border-top: 1px dashed var(--border);
+    padding-top: 0.75rem;
+    margin-top: 0.15rem;
+}
+
+.pricing-footnote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 720px;
+    margin: 2rem auto 0;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.98rem;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.1rem 1.5rem;
+    box-shadow: var(--shadow-soft);
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+    .pricing-plans {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .pricing-plans {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-block-head {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .pricing-fee-chip {
+        align-items: flex-start;
+    }
+}

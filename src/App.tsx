@@ -5,9 +5,10 @@ import Hero from './components/Hero';
 import About from './components/About';
 import QuoteSection from './components/QuoteSection';
 import Services from './components/Services';
-import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import AboutMe from './pages/AboutMe';
+import FAQs from './pages/FAQs';
+import Pricing from './pages/Pricing';
 import TermsOfService from './pages/TermsOfService';
 import ServiceDetail from './pages/ServiceDetail';
 
@@ -42,7 +43,6 @@ const Home = () => (
     <QuoteSection quotes={quotes} />
     <Services />
     <QuoteSection quotes={testimonials} title="Testimonials" />
-    <FAQ />
     <Contact />
   </>
 );
@@ -59,6 +59,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about-me" element={<AboutMe />} />
+            <Route path="/faqs" element={<FAQs />} />
+            <Route path="/pricing" element={<Pricing />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/services/:slug" element={<ServiceDetail />} />
           </Routes>

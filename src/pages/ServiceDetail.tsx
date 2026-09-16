@@ -72,32 +72,13 @@ const ServiceDetail = () => {
             {/* Fees & Session info */}
             <section className="section service-info-section">
                 <div className="container">
-                    <motion.div
-                        className="service-info-cards"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.7 }}
-                    >
-                        <div className="service-info-card">
-                            <IndianRupee size={22} aria-hidden="true" />
-                            <span className="service-info-label">Fees per session</span>
-                            <span className="service-info-value">&#8377;1,200</span>
-                        </div>
-                        <div className="service-info-card">
-                            <Clock size={22} aria-hidden="true" />
-                            <span className="service-info-label">Session time</span>
-                            <span className="service-info-value">50-60 minutes</span>
-                        </div>
-                    </motion.div>
-
                     <motion.a
                             href="https://forms.gle/p3LY41jq33sCv1kq7"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-ivory service-cta-button"
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
+                            initial={{ opacity: 0, y: -25 }}
+                            whileInView={{ opacity: 1, y: -50 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.7, delay: 0.15 }}
                             whileHover={{ y: -2 }}

@@ -12,9 +12,9 @@ export const services: Service[] = [
             'One-on-one sessions to address personal challenges, mental health disorders, and personal growth.',
     },
     {
-        slug: 'therapy-for-teens-adolescents',
-        title: 'Therapy for Teens & Adolescents',
+        slug: 'therapy-for-teens-adolescents-homemakers',
+        title: 'Therapy for Teens, Adolescents & Homemakers',
         description:
-            'Supporting young people through the challenges of adolescence and beyond.',
+            'For homemakers and students navigating stress, life transitions, emotion dysregulation and beyond. ',
     },
 ];

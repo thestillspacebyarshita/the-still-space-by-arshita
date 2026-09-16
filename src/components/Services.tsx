@@ -5,7 +5,7 @@ import { services } from '../data/servicesData';
 
 const serviceIcons = {
     'individual-therapy-for-adults': <Compass size={26} strokeWidth={1.5} />,
-    'therapy-for-teens-adolescents': <Users size={26} strokeWidth={1.5} />,
+    'therapy-for-teens-adolescents-homemakers': <Users size={26} strokeWidth={1.5} />,
 };
 
 const ServiceIcon = ({ slug }: { slug: string }) => serviceIcons[slug as keyof typeof serviceIcons] ?? null;

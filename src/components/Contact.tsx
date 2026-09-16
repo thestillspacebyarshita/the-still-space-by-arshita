@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, Phone, MapPin, Mail } from 'lucide-react';
+import { Send, Phone, MapPin, Mail, Instagram, Linkedin } from 'lucide-react';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -78,6 +78,34 @@ const Contact = () => {
                                 <p>Online</p>
                             </div>
                         </div>
+                        <a
+                            className="contact-info-item contact-info-link"
+                            href="https://www.instagram.com/thestillspacebyarshita/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className="contact-info-icon" aria-hidden="true">
+                                <Instagram size={22} strokeWidth={1.5} />
+                            </div>
+                            <div>
+                                <h3>Instagram</h3>
+                                <p>thestillspacebyarshita</p>
+                            </div>
+                        </a>
+                        <a
+                            className="contact-info-item contact-info-link"
+                            href="https://www.linkedin.com/in/arshita-sharma-12a0801a9/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className="contact-info-icon" aria-hidden="true">
+                                <Linkedin size={22} strokeWidth={1.5} />
+                            </div>
+                            <div>
+                                <h3>LinkedIn</h3>
+                                <p>arshita-sharma</p>
+                            </div>
+                        </a>
                     </div>
 
                     {/* Contact Form */}

@@ -8,7 +8,8 @@ const navLinks = [
     { name: 'Home', path: '#hero' },
     { name: 'About', path: '#about' },
     { name: 'Services', path: '#services' },
-    { name: 'FAQs', path: '#faqs' },
+    { name: 'Pricing', path: '/pricing', page: true },
+    { name: 'FAQs', path: '/faqs', page: true },
     { name: 'Contact', path: '#contact' },
 ];
 
@@ -22,8 +23,16 @@ const Navbar = () => {
     // the viewport stays put on tablet/mobile browsers.
     const CLOSE_ANIMATION_MS = 420;
 
-    const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string, isPage?: boolean) => {
         e.preventDefault();
+
+        if (isPage) {
+            setIsOpen(false);
+            if (location.pathname !== path) {
+                navigate(path);
+            }
+            return;
+        }
 
         const scrollToTarget = () => {
             document.querySelector(path)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -62,7 +71,7 @@ const Navbar = () => {
                             key={link.name}
                             href={link.path}
                             className="nav-link"
-                            onClick={(e) => handleNavClick(e, link.path)}
+                            onClick={(e) => handleNavClick(e, link.path, link.page)}
                         >
                             {link.name}
                         </a>
@@ -93,7 +102,7 @@ const Navbar = () => {
                                     key={link.name}
                                     href={link.path}
                                     className="nav-link"
-                                    onClick={(e) => handleNavClick(e, link.path)}
+                                    onClick={(e) => handleNavClick(e, link.path, link.page)}
                                 >
                                     {link.name}
                                 </a>

@@ -16,6 +16,7 @@ describe('Navbar', () => {
     expect(screen.getByRole('link', { name: /home/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /about/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /services/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /pricing/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /faqs/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /contact/i })).toBeInTheDocument();
   });
@@ -39,7 +40,7 @@ describe('Navbar', () => {
     const linksBefore = screen.getAllByRole('link').length;
     fireEvent.click(screen.getByRole('button', { name: /toggle menu/i, hidden: true }));
     // mobile menu adds one link per nav item
-    expect(screen.getAllByRole('link').length).toBe(linksBefore + 5);
+    expect(screen.getAllByRole('link').length).toBe(linksBefore + 6);
   });
 
   it('closes the mobile menu when a menu link is clicked', async () => {
@@ -47,7 +48,7 @@ describe('Navbar', () => {
     const linksBefore = screen.getAllByRole('link').length;
     const toggle = screen.getByRole('button', { name: /toggle menu/i, hidden: true });
     fireEvent.click(toggle);
-    expect(screen.getAllByRole('link').length).toBe(linksBefore + 5);
+    expect(screen.getAllByRole('link').length).toBe(linksBefore + 6);
 
     const menuLink = screen.getAllByRole('link', { name: /about/i }).pop() as HTMLElement;
     fireEvent.click(menuLink);

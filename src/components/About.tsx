@@ -44,17 +44,11 @@ const About = () => {
 
                         <div className="about-text">
                             <p>
-                                I'm Arshita Sharma, an RCI-licensed Clinical Psychologist
-                                with over 2.5 years of professional experience across
-                                hospitals, rehabilitation settings, crisis intervention,
-                                and psychotherapy.
+                                Hey, I am Arshita, the founder of the still space. I have built this space for people like me who couldn’t find the right therapist or a space that was understanding, safe or felt like a warm hug on those difficult days. My vision as a psychologist has been simple to provide the person sitting on the other side of a laptop with a space to feel safe enough to unravel their heavy feelings, difficult experiences, and have a better understanding of themselves.
                             </p>
 
                             <p>
-                                Therapy at The Still Space is to pause, make sense of your
-                                experiences, and build a kinder relationship with yourself
-                                without judgment or pressure to &ldquo;have it all figured
-                                out.&rdquo;
+                                So I have undergone 6 years of training and 2 years of work experience with rehabilitation centres, private clinics, and tele-health setups, which form my foundation and make me a better therapist day by day. 
                             </p>
                         </div>
 

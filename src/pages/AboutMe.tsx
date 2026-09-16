@@ -37,14 +37,29 @@ const milestones = [
     {
         title: 'Additional Certifications',
         desc: <>
-            <p>Trauma & Somatic Work</p>
-            <p>Polyvagal Theory • Internal Family Systems (IFS) • Somatic Trauma Treatment • Trauma-Informed Care</p>
-            <br />
-            <p>Psychotherapy & Clinical Skills</p>
-            <p>DBT Essentials • Motivational Interviewing • Anxiety, Depression & Mood Disorders</p>
-            <br />
-            <p>Suicide & Crisis Intervention</p>
-            <p>Suicide Intervention & Prevention Strategies</p>
+            <div style={{ marginTop: '0.8rem' }}>
+                <p><strong>Trauma & Somatic Work</strong></p>
+                <ul>
+                    <li>Polyvagal Theory</li>
+                    <li>Internal Family Systems (IFS)</li>
+                    <li>Somatic Trauma Treatment</li>
+                    <li>Trauma-Informed Care</li>
+                </ul>
+            </div>
+            <div style={{ marginTop: '0.8rem' }}>
+                <p><strong>Psychotherapy & Clinical Skills</strong></p>
+                <ul>
+                    <li>DBT Essentials</li>
+                    <li>Motivational Interviewing</li>
+                    <li>Anxiety, Depression & Mood Disorders</li>
+                </ul>
+            </div>
+            <div style={{ marginTop: '0.8rem' }}>
+                <p><strong>Suicide & Crisis Intervention</strong></p>
+                <ul>
+                    <li>Suicide Intervention & Prevention Strategies</li>
+                </ul>
+            </div>
         </>,
         img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800',
         side: 'right'
