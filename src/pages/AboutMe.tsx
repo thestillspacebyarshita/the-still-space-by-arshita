@@ -16,8 +16,9 @@ const storyImages = [outsideTherapyImg1, outsideTherapyImg2, outsideTherapyImg3]
 
 const milestones = [
     {
-        title: 'Completed my Bachelors',
-        desc: 'Began the journey into psychology, learning the foundational principles of human behavior and mental processes. This degree shaped my initial understanding of the complexities of the mind.',
+        title: 'Completed My Bachelors at Indraprastha College for Women',
+        desc:
+            "My Bachelor's at Indraprastha College for Women, University of Delhi, laid the foundation for my journey in psychology. It gave me a strong understanding of psychological concepts while encouraging curiosity, critical thinking, and an interest in understanding people beyond their presenting concerns. This foundation shaped my decision to pursue clinical psychology and continues to influence the way I approach learning and clinical work today.",
         img: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=800',
         side: 'left'
     },
