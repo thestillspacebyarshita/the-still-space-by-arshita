@@ -23,7 +23,7 @@ const milestones = [
         side: 'left'
     },
     {
-        title: 'Completed my Masters',
+        title: 'Completed my Masters at Christ University',
         desc: 'My Master’s at Christ University gave me the opportunity to build hands-on clinical experience across diverse mental health settings. Through internships at Mental Health Matters, Gurgaon; IHBAS, Delhi; Athena Behavioral Health, Gurugram; and Tulasi Healthcare, Gurugram, I worked with varied clinical presentations including depression, anxiety, OCD, psychosis, bipolar disorder, autism, intellectual disabilities, and substance use. These experiences helped me develop practical skills in case history taking, MSEs, psychological assessments, treatment planning, and therapeutic interventions, while giving me a broader understanding of how psychological care is approached across hospital, rehabilitation, and clinical settings.',
         img: 'https://images.unsplash.com/photo-1535982330050-f1c2fb79ff78?auto=format&fit=crop&q=80&w=800',
         side: 'right'

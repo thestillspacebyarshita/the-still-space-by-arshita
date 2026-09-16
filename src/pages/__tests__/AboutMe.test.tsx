@@ -31,7 +31,7 @@ describe('AboutMe page', () => {
     );
     expect(screen.getByRole('heading', { name: /milestones/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /completed my bachelors at indraprastha college for women/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /completed my masters/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /completed my masters at christ university/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /completed pdcp/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /additional certifications/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /my therapy style/i })).toBeInTheDocument();
