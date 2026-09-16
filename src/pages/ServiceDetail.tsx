@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowDown, ArrowRight, Clock, Heart, IndianRupee } from 'lucide-react';
+import { ArrowDown, ArrowRight, Heart } from 'lucide-react';
 import { services } from '../data/servicesData';
 import './ServiceDetail.css';
 

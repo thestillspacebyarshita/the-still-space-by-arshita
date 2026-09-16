@@ -102,6 +102,11 @@ export const faqs: FaqItem[] = [
             <>
                 <p>The Still Space is not an emergency or crisis service.</p>
                 <p>If you are experiencing immediate thoughts of harming yourself or someone else, are in a psychiatric emergency, or require urgent medical attention, please contact your local emergency services, visit the nearest hospital, or reach out to a trusted person immediately. Therapy messages and emails are not monitored for emergencies.</p>
+                <p>Other 24/7 mental health emergency and crisis helpline numbers are:</p>
+                <ul>
+                    <li>Vandrevala Foundation: Call or WhatsApp +91 9999 666 555</li>
+                    <li>Tele-MANAS (Government of India): Dial 14416 or 1800-891-4416</li>
+                </ul>
             </>
         ),
     },

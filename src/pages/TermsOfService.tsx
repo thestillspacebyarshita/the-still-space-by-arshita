@@ -33,6 +33,13 @@ const TermsOfService = () => {
                             <p className="policy-callout-text">
                                 Therapy is not an emergency service.
                             </p>
+                            <p className="policy-callout-text policy-callout-text--spaced">
+                                Other 24/7 mental health emergency and crisis helpline numbers are:
+                            </p>
+                            <ul className="policy-callout-list">
+                                <li>Vandrevala Foundation: Call or WhatsApp +91 9999 666 555</li>
+                                <li>Tele-MANAS (Government of India): Dial 14416 or 1800-891-4416</li>
+                            </ul>
                         </div>
 
                         <p>
@@ -59,7 +66,7 @@ const TermsOfService = () => {
                         <ul>
                             <li>Individual therapy sessions are 50&ndash;60 minutes long.</li>
                             <li>
-                                The session fee is &#8377;1,200 unless a different fee has been
+                                The session fee is listed in the pricing information unless a different fee has been
                                 mutually agreed upon.
                             </li>
                             <li>
