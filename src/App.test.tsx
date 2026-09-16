@@ -1,5 +1,5 @@
 import { describe, expect, it, beforeEach } from 'vitest';
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen, waitFor, within } from '@testing-library/react';
 import App from './App';
 
 describe('App / Home page', () => {
@@ -36,7 +36,7 @@ describe('App / Home page', () => {
     const footer = document.querySelector('footer') as HTMLElement;
     const deadLinks = footer?.querySelectorAll('a[href="#"]') ?? [];
     expect(deadLinks.length).toBe(0);
-    expect(screen.getByRole('link', { name: /email/i })).toHaveAttribute('href', 'mailto:thestillspacebyarshita@gmail.com');
+    expect(within(footer).getByRole('link', { name: /email/i })).toHaveAttribute('href', 'mailto:thestillspacebyarshita@gmail.com');
   });
 
   it('sets the <title> tag via the helmet provider', async () => {

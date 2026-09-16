@@ -16,18 +16,16 @@ describe('ServiceDetail', () => {
     expect(screen.getByRole('heading', { name: /therapy process/i })).toBeInTheDocument();
   });
 
-  it('renders the process steps and fee info', () => {
+  it('renders the process steps', () => {
     render(
-      <MemoryRouter initialEntries={['/services/therapy-for-teens-adolescents']}>
+      <MemoryRouter initialEntries={['/services/therapy-for-teens-adolescents-homemakers']}>
         <Routes>
           <Route path="/services/:slug" element={<ServiceDetail />} />
         </Routes>
       </MemoryRouter>
     );
-    expect(screen.getByRole('heading', { name: /therapy for teens & adolescents/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /therapy for teens, adolescents & homemakers/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /reach out/i })).toBeInTheDocument();
-    expect(screen.getByText(/fees per session/i)).toBeInTheDocument();
-    expect(screen.getByText(/session time/i)).toBeInTheDocument();
   });
 
   it('shows the Book Your Free Call CTA', () => {

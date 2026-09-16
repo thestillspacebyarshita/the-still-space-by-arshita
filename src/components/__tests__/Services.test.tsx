@@ -12,7 +12,7 @@ describe('Services', () => {
     );
     expect(screen.getByRole('heading', { name: /my services/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /individual therapy for adults/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /therapy for teens & adolescents/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /therapy for teens, adolescents & homemakers/i })).toBeInTheDocument();
   });
 
   it('renders service descriptions', () => {
@@ -22,7 +22,7 @@ describe('Services', () => {
       </MemoryRouter>
     );
     expect(screen.getByText(/one-on-one sessions/i)).toBeInTheDocument();
-    expect(screen.getByText(/supporting young people/i)).toBeInTheDocument();
+    expect(screen.getByText(/homemakers and students navigating stress/i)).toBeInTheDocument();
   });
 
   it('links each card to its service detail page', () => {
@@ -35,9 +35,9 @@ describe('Services', () => {
       'href',
       '/services/individual-therapy-for-adults'
     );
-    expect(screen.getByRole('link', { name: /therapy for teens & adolescents/i })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: /therapy for teens, adolescents & homemakers/i })).toHaveAttribute(
       'href',
-      '/services/therapy-for-teens-adolescents'
+      '/services/therapy-for-teens-adolescents-homemakers'
     );
   });
 });
