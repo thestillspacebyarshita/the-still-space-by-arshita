@@ -553,6 +553,34 @@ button {
   color: inherit;
 }
 
+.service-note {
+  max-width: 940px;
+  margin: 2.5rem auto 0;
+  text-align: center;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 16px;
+  padding: 1.5rem 2.5rem;
+}
+
+.service-note p {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.service-note a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.service-note a:hover {
+  color: var(--accent-hover);
+}
+
 /* ── Quote sections ───────────────────────────────────── */
 .quote-section {
   position: relative;
