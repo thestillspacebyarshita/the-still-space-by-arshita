@@ -1,5 +1,7 @@
 name: Deploy to GitHub Pages
 
+# Manual trigger to force a fresh deployment of the latest commit.
+
 on:
   push:
     branches:
