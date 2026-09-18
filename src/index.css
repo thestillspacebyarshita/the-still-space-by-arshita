@@ -1039,9 +1039,7 @@ button {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(248, 245, 241, 0.88);
-  backdrop-filter: blur(18px) saturate(140%);
-  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  background-color: #f8f4ee;
   border-bottom: 1px solid var(--border);
 }
 
@@ -1058,7 +1056,7 @@ button {
 }
 
 .nav-brand img {
-  height: 42px;
+  height: 4rem;
   width: auto;
   object-fit: contain;
 }
@@ -1089,7 +1087,7 @@ button {
 }
 
 .nav-mobile {
-  background-color: rgba(248, 245, 241, 0.98);
+  background-color: #f8f4ee;
   border-bottom: 1px solid var(--border);
   overflow: hidden;
 }

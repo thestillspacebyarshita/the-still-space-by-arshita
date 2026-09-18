@@ -12,6 +12,7 @@ import bachelorsImg from '@/assets/bachelors.png';
 import mastersImg from '@/assets/masters.png';
 import pdcpImg from '@/assets/pdcp.png';
 import additionalCertificationsImg from '@/assets/additional_certificates.png';
+import therapyStyleImg from '@/assets/therapy_style.png';
 import './AboutMe.css';
 
 const introImages = [contentImg1, contentImg2, contentImg3];
@@ -71,7 +72,7 @@ const milestones = [
     {
         title: 'My Therapy Style',
         desc: 'I see therapy as a collaborative space where we build enough safety to explore difficult thoughts, emotions, and patterns without judgment. Alongside empathy and validation, I also believe therapy sometimes requires honest conversations. I may gently offer feedback, notice recurring patterns, or invite you to look at things from a different perspective, to help us reflect, review progress, and move therapy forward together.',
-        img: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800',
+        img: therapyStyleImg,
         side: 'left'
     }
 ];
