@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import Hero from './components/Hero';
 import About from './components/About';
 import QuoteSection from './components/QuoteSection';
+import Concerns from './components/Concerns';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import AboutMe from './pages/AboutMe';
@@ -11,18 +12,6 @@ import FAQs from './pages/FAQs';
 import Pricing from './pages/Pricing';
 import TermsOfService from './pages/TermsOfService';
 import ServiceDetail from './pages/ServiceDetail';
-
-const quotes = [
-  {
-    quote: "You don't have to arrive with the right words. You can arrive exactly as you are.",
-    byline: 'An invitation, not an expectation',
-  },
-  {
-    quote:
-      'Healing does not announce itself. It is the quiet noticing, the slower breath, the kinder inner voice.',
-    byline: 'On what therapy can feel like',
-  },
-];
 
 const testimonials = [
   {
@@ -40,7 +29,7 @@ const Home = () => (
   <>
     <Hero />
     <About />
-    <QuoteSection quotes={quotes} />
+    <Concerns />
     <Services />
     <QuoteSection quotes={testimonials} title="Testimonials" />
     <Contact />

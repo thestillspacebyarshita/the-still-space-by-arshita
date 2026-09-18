@@ -8,6 +8,10 @@ import contentImg3 from '@/assets/about_me_content_3.png';
 import outsideTherapyImg1 from '@/assets/outside_of_therapy_1.png';
 import outsideTherapyImg2 from '@/assets/outside_of_therapy_2.png';
 import outsideTherapyImg3 from '@/assets/outside_of_therapy_3.png';
+import bachelorsImg from '@/assets/bachelors.png';
+import mastersImg from '@/assets/masters.png';
+import pdcpImg from '@/assets/pdcp.png';
+import additionalCertificationsImg from '@/assets/additional_certificates.png';
 import './AboutMe.css';
 
 const introImages = [contentImg1, contentImg2, contentImg3];
@@ -19,19 +23,19 @@ const milestones = [
         title: 'Completed My Bachelors at Indraprastha College for Women',
         desc:
             "My Bachelor's at Indraprastha College for Women, University of Delhi, laid the foundation for my journey in psychology. It gave me a strong understanding of psychological concepts while encouraging curiosity, critical thinking, and an interest in understanding people beyond their presenting concerns. This foundation shaped my decision to pursue clinical psychology and continues to influence the way I approach learning and clinical work today.",
-        img: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=800',
+        img: bachelorsImg,
         side: 'left'
     },
     {
         title: 'Completed my Masters at Christ University',
         desc: 'My Master’s at Christ University gave me the opportunity to build hands-on clinical experience across diverse mental health settings. Through internships at Mental Health Matters, Gurgaon; IHBAS, Delhi; Athena Behavioral Health, Gurugram; and Tulasi Healthcare, Gurugram, I worked with varied clinical presentations including depression, anxiety, OCD, psychosis, bipolar disorder, autism, intellectual disabilities, and substance use. These experiences helped me develop practical skills in case history taking, MSEs, psychological assessments, treatment planning, and therapeutic interventions, while giving me a broader understanding of how psychological care is approached across hospital, rehabilitation, and clinical settings.',
-        img: 'https://images.unsplash.com/photo-1535982330050-f1c2fb79ff78?auto=format&fit=crop&q=80&w=800',
+        img: mastersImg,
         side: 'right'
     },
     {
         title: 'Completed PDCP at SGT University',
         desc: 'My Professional Diploma in Clinical Psychology at SGT University gave me more than my license, it helped me transition from academic learning to hands-on clinical practice. Through supervised work with children, adolescents, adults, and older adults, I gained experience in psychological assessment, clinical formulation, therapy, crisis intervention, and family work. Training across diverse clinical and medical settings strengthened my clinical judgement and ability to understand concerns within their broader context. Most importantly, the experience helped me develop a therapeutic style grounded in evidence based therapy, empathy, active listening, collaboration, and clinical responsibility, while encouraging me to stay curious and continue learning.',
-        img: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=800',
+        img: pdcpImg,
         side: 'left'
     },
     {
@@ -61,7 +65,7 @@ const milestones = [
                 </ul>
             </div>
         </>,
-        img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800',
+        img: additionalCertificationsImg,
         side: 'right'
     },
     {
