@@ -71,7 +71,7 @@ export const faqs: FaqItem[] = [
                     <li>Therapy for adolescents- 1100</li>
                     <li>Therapy for homemakers and students- 800</li>
                 </ul>
-                <p>A limited number of sliding-scale slots and pro bono slots are available based on need and availability.</p>
+                <p>A limited number of sliding-scale slots are available based on need and availability.</p>
                 <p>Fees are discussed transparently before therapy begins.</p>
             </>
         ),
