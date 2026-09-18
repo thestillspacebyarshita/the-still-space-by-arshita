@@ -121,6 +121,14 @@
     padding: 0 0 1rem;
 }
 
+.service-pricing-section {
+    padding: 5rem 0 6rem;
+}
+
+.service-pricing-section .pricing-block {
+    margin-bottom: 0;
+}
+
 .service-info-cards {
     display: flex;
     flex-wrap: wrap;

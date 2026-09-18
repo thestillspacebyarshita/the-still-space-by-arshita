@@ -224,43 +224,29 @@ button {
 .btn-know-more {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
-  padding: 0.25rem 0;
-  background: transparent;
-  border: none;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.9rem 1.9rem;
+  border-radius: 999px;
+  background-color: var(--accent-strong);
+  color: var(--bg-primary);
+  border: 1px solid transparent;
   cursor: pointer;
-  color: var(--accent);
-  font-family: var(--font-heading);
-  font-size: 1.35rem;
-  font-style: italic;
-  font-weight: 600;
-  letter-spacing: 0.4px;
-  position: relative;
-  transition: color 0.3s ease, letter-spacing 0.3s ease;
-}
-
-.btn-know-more::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -0.3rem;
-  width: 100%;
-  height: 1px;
-  background-color: var(--accent);
-  border-radius: 1px;
-  transform: scaleX(0);
-  transform-origin: left center;
-  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .btn-know-more:hover {
-  color: var(--accent-hover);
-  letter-spacing: 0.8px;
-}
-
-.btn-know-more:hover::after {
-  transform: scaleX(1);
   background-color: var(--accent-hover);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-maroon);
 }
 
 .btn-know-more-arrow {
@@ -268,20 +254,14 @@ button {
   height: 1.1rem;
   stroke: currentColor;
   fill: none;
-  stroke-width: 1.5;
+  stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
   transition: transform 0.3s ease;
 }
 
 .btn-know-more:hover .btn-know-more-arrow {
-  transform: translateX(6px);
-}
-
-@media (min-width: 1024px) {
-  .btn-know-more {
-    font-size: 1.5rem;
-  }
+  transform: translateX(4px);
 }
 
 /* ── Hero ─────────────────────────────────────────────── */

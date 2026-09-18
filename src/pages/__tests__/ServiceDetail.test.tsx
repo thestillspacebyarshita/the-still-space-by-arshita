@@ -18,14 +18,28 @@ describe('ServiceDetail', () => {
 
   it('renders the process steps', () => {
     render(
-      <MemoryRouter initialEntries={['/services/therapy-for-teens-adolescents-homemakers']}>
+      <MemoryRouter initialEntries={['/services/therapy-for-adolescents-parents']}>
         <Routes>
           <Route path="/services/:slug" element={<ServiceDetail />} />
         </Routes>
       </MemoryRouter>
     );
-    expect(screen.getByRole('heading', { name: /therapy for teens, adolescents & homemakers/i })).toBeInTheDocument();
+    expect(screen.getAllByRole('heading', { name: /therapy for adolescents & parents/i }).length).toBeGreaterThan(0);
     expect(screen.getByRole('heading', { name: /reach out/i })).toBeInTheDocument();
+  });
+
+  it('renders the pricing plans for the matched service', () => {
+    render(
+      <MemoryRouter initialEntries={['/services/therapy-for-adolescents-parents']}>
+        <Routes>
+          <Route path="/services/:slug" element={<ServiceDetail />} />
+        </Routes>
+      </MemoryRouter>
+    );
+    expect(screen.getByRole('heading', { name: /pricing/i })).toBeInTheDocument();
+    expect(screen.getAllByText(/₹1,100/).length).toBeGreaterThan(0);
+    expect(screen.getByText(/a gentle beginning/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/pay in 2 installments/i).length).toBeGreaterThan(0);
   });
 
   it('shows the Book Your First Session CTA', () => {

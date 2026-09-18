@@ -3,6 +3,8 @@ import { Link, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowDown, ArrowRight, Heart } from 'lucide-react';
 import { services } from '../data/servicesData';
+import { pricingCategories } from '../data/pricingData';
+import PricingPlans from '../components/PricingPlans';
 import './ServiceDetail.css';
 
 const processSteps = [
@@ -36,6 +38,7 @@ const processSteps = [
 const ServiceDetail = () => {
     const { slug } = useParams();
     const service = services.find((s) => s.slug === slug);
+    const category = service ? pricingCategories.find((c) => c.id === service.pricingCategoryId) : undefined;
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -88,6 +91,24 @@ const ServiceDetail = () => {
                         </motion.a>
                 </div>
             </section>
+
+            {/* Pricing */}
+            {category && (
+                <section className="service-pricing-section" style={{ backgroundColor: 'var(--bg-alt)' }}>
+                    <div className="container">
+                        <motion.h2
+                            className="service-process-title"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.7 }}
+                        >
+                            Pricing
+                        </motion.h2>
+                        <PricingPlans category={category} />
+                    </div>
+                </section>
+            )}
 
             {/* Process */}
             <section className="service-process-section" style={{ backgroundColor: 'var(--bg-secondary)' }}>

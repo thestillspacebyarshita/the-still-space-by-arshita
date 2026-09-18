@@ -34,16 +34,6 @@ export const faqs: FaqItem[] = [
         answer: <p>No, currently I am offering Online sessions which are conducted over a secure video platform and available across India.</p>,
     },
     {
-        question: 'Do you offer a discovery call?',
-        answer: (
-            <>
-                <p>No.</p>
-                <p>I don't offer discovery calls. I believe it's important that conversations about your concerns happen within the privacy, time, and structure of a therapy session rather than in a brief introductory call.</p>
-                <p>If you have questions about fees, availability, session format, or other logistics, I'm happy to answer those over message or email before you book your first session.</p>
-            </>
-        ),
-    },
-    {
         question: 'Which issues can I seek therapy for?',
         answer: (
             <>

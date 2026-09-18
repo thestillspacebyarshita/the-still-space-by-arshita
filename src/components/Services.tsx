@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Compass, Users } from 'lucide-react';
+import { GraduationCap, Heart, HeartHandshake, Home } from 'lucide-react';
 import { services } from '../data/servicesData';
 
 const serviceIcons = {
-    'individual-therapy-for-adults': <Compass size={26} strokeWidth={1.5} />,
-    'therapy-for-teens-adolescents-homemakers': <Users size={26} strokeWidth={1.5} />,
+    'individual-therapy-for-adults': <Heart size={26} strokeWidth={1.5} />,
+    'therapy-for-adolescents-parents': <HeartHandshake size={26} strokeWidth={1.5} />,
+    'therapy-for-students': <GraduationCap size={26} strokeWidth={1.5} />,
+    'therapy-for-homemakers': <Home size={26} strokeWidth={1.5} />,
 };
 
 const ServiceIcon = ({ slug }: { slug: string }) => serviceIcons[slug as keyof typeof serviceIcons] ?? null;
