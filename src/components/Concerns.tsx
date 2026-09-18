@@ -14,7 +14,7 @@ const concerns = [
     { src: angerIcon, alt: 'Anger' },
     { src: stressIcon, alt: 'Stress & Burnout' },
     { src: addictionIcon, alt: 'Addiction' },
-    { src: emotionsIcon, alt: 'Emotions Dysregulation' },
+    { src: emotionsIcon, alt: 'Emotion Dysregulation' },
     { src: griefIcon, alt: 'Grief' },
     { src: selfWorthIcon, alt: 'Self Worth' },
 ];

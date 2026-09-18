@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Clock, CreditCard } from 'lucide-react';
 import { pricingCategories } from '../data/pricingData';
+import TherapyProcess from '../components/TherapyProcess';
 import './Pricing.css';
 
 const formatINR = (value: number) => '₹' + value.toLocaleString('en-IN');
@@ -115,6 +116,9 @@ const Pricing = () => {
                     ))}
                 </div>
             </section>
+
+            {/* Therapy Process */}
+            <TherapyProcess />
         </div>
     );
 };

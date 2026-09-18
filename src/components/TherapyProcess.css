@@ -1,0 +1,86 @@
+/* ── Process stepper ────────────────────────────────── */
+.service-process-section {
+    padding: 5rem 0 3rem;
+}
+
+.service-process-title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    color: var(--text-primary);
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 3.5rem;
+}
+
+.service-process {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.process-row {
+    display: flex;
+}
+
+.process-node-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.25rem;
+}
+
+.process-node {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--accent);
+    color: var(--bg-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.process-node:hover {
+    background-color: var(--accent-hover);
+    transform: scale(1.05);
+}
+
+.process-line {
+    width: 2px;
+    background-color: var(--border);
+    flex: 1;
+    min-height: 2.5rem;
+}
+
+.process-content {
+    padding: 0.4rem 0 2.5rem;
+    flex: 1;
+}
+
+.process-content h3 {
+    font-family: var(--font-sans);
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    margin-bottom: 0.4rem;
+}
+
+.process-content p {
+    color: var(--text-secondary);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    max-width: 46ch;
+}
+
+@media (max-width: 640px) {
+    .service-process-section {
+        padding: 4rem 0 2rem;
+    }
+
+    .service-process {
+        max-width: 100%;
+    }
+}
