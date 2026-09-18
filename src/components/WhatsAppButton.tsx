@@ -1,6 +1,6 @@
 // Replace with Arshita's WhatsApp number in international format:
 // country code + number, no "+", spaces or dashes (e.g. India +91 98765 43210 -> 919876543210)
-const WHATSAPP_NUMBER = '919582819854';
+const WHATSAPP_NUMBER = '919958578124';
 const WHATSAPP_MESSAGE = 'Hi Arshita, I would like to know more about therapy at The Still Space.';
 
 const WA_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;

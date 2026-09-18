@@ -28,7 +28,7 @@ describe('ServiceDetail', () => {
     expect(screen.getByRole('heading', { name: /reach out/i })).toBeInTheDocument();
   });
 
-  it('shows the Book Your Free Call CTA', () => {
+  it('shows the Book Your First Session CTA', () => {
     render(
       <MemoryRouter initialEntries={['/services/individual-therapy-for-adults']}>
         <Routes>
@@ -36,7 +36,7 @@ describe('ServiceDetail', () => {
         </Routes>
       </MemoryRouter>
     );
-    expect(screen.getByRole('link', { name: /book your free call/i })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: /book your first session/i })).toHaveAttribute(
       'href',
       'https://forms.gle/p3LY41jq33sCv1kq7'
     );

@@ -113,18 +113,6 @@ const Pricing = () => {
                             </div>
                         </motion.div>
                     ))}
-
-                    <motion.p
-                        className="pricing-footnote"
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        A limited number of sliding-scale and pro bono slots are available
-                        based on need and availability. Fees are discussed transparently before
-                        therapy begins.
-                    </motion.p>
                 </div>
             </section>
         </div>

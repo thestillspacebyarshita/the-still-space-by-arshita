@@ -49,19 +49,6 @@ const Services = () => {
                         </motion.article>
                     ))}
                 </div>
-
-                <motion.div
-                    className="service-note"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.1 }}
-                >
-                    <p>
-                        I offer two pro bono therapy slots each month. If you'd like to be considered, please reach out via{' '}
-                        <a href="mailto:thestillspacebyarshita@gmail.com">email</a>. I'll share a short application form, and slots are offered based on availability and need.
-                    </p>
-                </motion.div>
             </div>
         </section>
     );

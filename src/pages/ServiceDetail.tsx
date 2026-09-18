@@ -84,7 +84,7 @@ const ServiceDetail = () => {
                             whileHover={{ y: -2 }}
                             whileTap={{ y: 0 }}
                         >
-                            Book Your Free Call <ArrowRight size={18} aria-hidden="true" />
+                            Book Your First Session <ArrowRight size={18} aria-hidden="true" />
                         </motion.a>
                 </div>
             </section>
