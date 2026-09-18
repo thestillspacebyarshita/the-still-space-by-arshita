@@ -7,9 +7,11 @@ const formatINR = (value: number) => '₹' + value.toLocaleString('en-IN');
 
 interface PricingPlansProps {
     category: PricingCategory;
+    title?: string;
+    note?: string;
 }
 
-const PricingPlans = ({ category }: PricingPlansProps) => (
+const PricingPlans = ({ category, title, note }: PricingPlansProps) => (
     <motion.div
         className="pricing-block"
         initial={{ opacity: 0, y: 24 }}
@@ -19,8 +21,8 @@ const PricingPlans = ({ category }: PricingPlansProps) => (
     >
         <div className="pricing-block-head">
             <div>
-                <p className="pricing-block-note">{category.note}</p>
-                <h2 className="pricing-block-title">{category.title}</h2>
+                <p className="pricing-block-note">{note ?? category.note}</p>
+                <h2 className="pricing-block-title">{title ?? category.title}</h2>
             </div>
             <div className="pricing-fee-chip">
                 <span className="pricing-fee-label">Per session</span>

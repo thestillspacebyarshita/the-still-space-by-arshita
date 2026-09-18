@@ -3,6 +3,7 @@ export interface Service {
     title: string;
     description: string;
     pricingCategoryId: string;
+    pricingNote?: string;
 }
 
 export const services: Service[] = [
@@ -26,6 +27,7 @@ export const services: Service[] = [
         description:
             'Support for students navigating exam anxiety, academic pressure, career uncertainty, self-esteem, procrastination, and the emotional challenges that come with growing up and finding your place.',
         pricingCategoryId: 'homemakers-students',
+        pricingNote: 'For students',
     },
     {
         slug: 'therapy-for-homemakers',
@@ -33,5 +35,6 @@ export const services: Service[] = [
         description:
             'A space for homemakers navigating life transitions, relationship and family dynamics, identity beyond caregiving, emotional overwhelm, and balancing personal needs with everyday responsibilities.',
         pricingCategoryId: 'homemakers-students',
+        pricingNote: 'For homemakers',
     },
 ];

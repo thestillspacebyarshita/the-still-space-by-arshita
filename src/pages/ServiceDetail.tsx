@@ -39,6 +39,8 @@ const ServiceDetail = () => {
     const { slug } = useParams();
     const service = services.find((s) => s.slug === slug);
     const category = service ? pricingCategories.find((c) => c.id === service.pricingCategoryId) : undefined;
+    const pricingTitle = service && service.pricingCategoryId === 'homemakers-students' ? service.title : undefined;
+    const pricingNote = service?.pricingNote;
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -84,7 +86,6 @@ const ServiceDetail = () => {
                             whileInView={{ opacity: 1, y: -50 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.7, delay: 0.15 }}
-                            whileHover={{ y: -2 }}
                             whileTap={{ y: 0 }}
                         >
                             Book Your First Session <ArrowRight size={18} aria-hidden="true" />
@@ -105,7 +106,7 @@ const ServiceDetail = () => {
                         >
                             Pricing
                         </motion.h2>
-                        <PricingPlans category={category} />
+                        <PricingPlans category={category} title={pricingTitle} note={pricingNote} />
                     </div>
                 </section>
             )}
